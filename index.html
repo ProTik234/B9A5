@@ -1,11 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="container mx-auto lg:px-24">
+        <div class="flex justify-between navbar bg-base-100">
+          <div class="flex lg:flex-row-reverse">
+          <div class="flex-none">
+            <button class="btn btn-square btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div class="hidden lg:px-72 lg:flex justify-around gap-6">
+              <a>
+                Home
+              </a>
+              <a>
+                About
+              </a>
+              <a>
+                Destination
+              </a>
+              <a>
+                Search
+              </a>
+            </div>
+          </div>
+          <div class="lg:flex-1">
+            <a class="btn btn-ghost text-2xl lg:text-4xl gap-0">Pepe<span class="text-green-500">-</span>Ticket</a>
+          </div>
+        </div>
+          <div class="flex justify-around">
+            <button class="btn btn-error bg-green-200 border-none text-green-500 items-center mx-auto lg:mx-10 my-6 text-xl">Bus
+                <span>
+                    <img src="/images/bus-icon.png" alt="">
+                </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    <header class="container mx-auto">
+        <div class="card image-full lg:px-48">
+            <figure><img src="/images/banner.png" alt="Shoes" /></figure>
+            <div class="card-body items-center my-auto">
+              <h2 class="card-title">End-to-End Travel with <span class="text-green-500">Pepe</span></h2>
+              <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+              <div class="card-actions justify-end py-8">
+                <button class="btn btn-primary bg-green-500 border-none">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </header>
+<section class="container mx-auto my-24">
+<h1>
+    Best Offers For You
+</h1>
+<div class="flex flex-col lg:flex-row gap-6 mx-auto py-9">
+  <div class="lg:w-[570px] flex bg-[#FFBF0F] rounded-3xl">
+    <div class="px-3 lg:px-12 py-12">
+<h1>
+  15% OFF
+</h1>
+<p>
+  on your next purchase <br>
+  use by January 2024
+</p>
+    </div>
+    <div class="h-auto lg:pl-8"> <img src="images/cupon-devider.png" alt=""></div>
+    <div class="px-3 lg:px-12 py-12">
+      <h1>NEW15</h1>
+      <P>coupon code</P>
+    </div>
+  </div>
+  <div class="lg:w-[570px] flex bg-[#F78C9C] rounded-3xl">
+    <div class="px-3 lg:px-12 py-12">
+      <h1>
+        20% OFF
+      </h1>
+      <p>
+        on your next purchase <br>
+        use by January 2024
+      </p>
+          </div>
+          <div class="h-auto lg:pl-8"> <img src="images/cupon-devider.png" alt=""></div>
+          <div class="px-3 lg:px-12 py-12">
+            <h1>Couple 20</h1>
+            <P>coupon code</P>
+          </div>
+  </div>
+</div>
+</section>
+<section class="container mx-auto my-24">
+<h1>Pepe Travels</h1>
+<div class="flex flex-col lg:flex-row py-24">
+  <div>
+<div class="flex justify-between">
+<div class="flex">
+<div>
+  <img src="images/bus-logo.png" alt="">
+</div>
+<div>
+  <p>Pepe Travels<br> Coach-009-WEB</p>
+</div>
+</div>
+<div class="flex">
+<div> <img src="images/seat-green.png" alt=""></div>
+<div>
+  <P>
+    <span>0</span> seats left
+  </P>
+</div>
+</div>
+</div>
+<div class="bg-[#f7f8f8]">
+  <div class="flex justify-between">
+<div><p>Route</p></div>
+<div><P>Dhaka-Sylhet</P></div>
+  </div>
+  <div><hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></div>
+  <div class="flex justify-between">
+<div><P>Departure Time</P></div>
+<div><p>9:00 PM</p></div>
+  </div>
+  <div><hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></div>
+  <div class="flex flex-col lg:flex-row lg:gap-6">
+<div><p>Boarding Point - Laxmipur</p></div>
+<div><P>Dropping Point - Bogura</P></div>
+<div><P>Est. Time - 11 Hour</P></div>
+  </div>
+
+</div>
+</div>
+<div class="hidden lg:block">
+<img src="images/info-devider.png" alt="">
+</div>
+<div>
+<img src="images/fare.png" alt="">
+550 Taka <br>
+Per Seat
+</div>
+</div>
+</section>
+<section class="container mx-auto py-24">
+<div class="flex flex-col lg:flex-row gap-12">
+ <div>
+  <div class="grid grid-cols-5 items-center gap-6">
+<div><p>A</p></div>
+<div><button class="btn">A1</button></div>
+<div><button class="btn">A2</button></div>
+<div><button class="btn">A3</button></div>
+<div><button class="btn">A4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-6 py-6">
+    <div><p>B</p></div>
+<div><button class="btn">B1</button></div>
+<div><button class="btn">B2</button></div>
+<div><button class="btn">B3</button></div>
+<div><button class="btn">B4</button></div>
+  </div>
+ </div> 
+ <div class="bg-[#f7f8f8] py-6">
+  <div class="flex gap-36">
+    <div><p>Seat<span class="text-green-500">0</span></p></div>
+    <div><p>Class</p></div>
+    <div><p>Price</p></div>
+  </div>
+<div class="py-6"><hr></div>
+<div class="flex justify-between">
+  <div><p>Total Price</p></div>
+  <div><p>BDT<span>0</span></p></div>
+</div>
+<div class="py-6">
+  <label class="input input-bordered flex items-center gap-2">
+    <input type="text" class="grow" placeholder="Search" />
+    <span class="badge badge-info bg-green-500">Apply</span>
+  </label>
+</div>
+<div class="flex justify-between py-6">
+  <div><p>Grand Total</p></div>
+  <div><p>BDT<span>0</span></p></div>
+</div>
+ </div>
+
+  </div>
+
+</section>
 </body>
 </html>
