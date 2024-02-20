@@ -112,7 +112,7 @@
 <div> <img src="images/seat-green.png" alt=""></div>
 <div>
   <P>
-    <span>0</span> seats left
+    <span id="seats" class="text-green-500"> 0</span> seats left
   </P>
 </div>
 </div>
@@ -165,30 +165,32 @@ Per Seat
   </div>
  </div> 
  <div class="bg-[#f7f8f8] py-6">
-  <div class="flex gap-36">
-    <div><p>Seat<span class="text-green-500">0</span></p></div>
-    <div><p>Class</p></div>
+  <div class="flex justify-between">
+    <div><p>Seat<span id="counter" class="text-green-500"> 0</span></p></div>
     <div><p>Price</p></div>
   </div>
+  <div id="clickedList">
+
+  </div>
+
 <div class="py-6"><hr></div>
 <div class="flex justify-between">
   <div><p>Total Price</p></div>
-  <div><p>BDT<span>0</span></p></div>
+  <div><p>BDT<span id="totalPrice">0</span></p></div>
 </div>
 <div class="py-6">
-  <label class="input input-bordered flex items-center gap-2">
-    <input type="text" class="grow" placeholder="Search" />
-    <span class="badge badge-info bg-green-500">Apply</span>
-  </label>
+<input type="text" id="couponCode" placeholder="Enter coupon code">
+<button id="applyButton" onclick="applyCoupon()">Apply</button>
 </div>
 <div class="flex justify-between py-6">
   <div><p>Grand Total</p></div>
-  <div><p>BDT<span>0</span></p></div>
+  <div><p id="grandTotal"></p></div>
 </div>
  </div>
 
   </div>
 
 </section>
+<script src="./app.js"></script>
 </body>
 </html>
