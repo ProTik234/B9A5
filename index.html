@@ -13,34 +13,30 @@
         <div class="flex justify-between navbar bg-base-100">
           <div class="flex lg:flex-row-reverse">
           <div class="flex-none">
-            <button class="btn btn-square btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
+            
             <div class="hidden lg:px-72 lg:flex justify-around gap-6">
-              <a>
+              <a class="font-bold">
                 Home
               </a>
-              <a>
+              <a class="font-bold">
                 About
               </a>
-              <a>
+              <a class="font-bold">
                 Destination
               </a>
-              <a>
+              <a class="font-bold">
                 Search
               </a>
             </div>
           </div>
           <div class="lg:flex-1">
-            <a class="btn btn-ghost text-2xl lg:text-4xl gap-0">Pepe<span class="text-green-500">-</span>Ticket</a>
+            <p class="text-2xl lg:text-4xl gap-0">Pepe<span class="text-green-500">-</span>Ticket</p>
           </div>
         </div>
-          <div class="flex justify-around">
-            <button class="btn btn-error bg-green-200 border-none text-green-500 items-center mx-auto lg:mx-10 my-6 text-xl">Bus
-                <span>
-                    <img src="/images/bus-icon.png" alt="">
-                </span>
-            </button>
+          <div class="flex gap-3 justify-around">
+            <div><p class="text-green-500 font-bold">Bus</p></div>
+            <div><img src="images/bus-icon.png" alt=""></div>
+              </div>
           </div>
         </div>
       </nav>
@@ -51,19 +47,19 @@
               <h2 class="card-title">End-to-End Travel with <span class="text-green-500">Pepe</span></h2>
               <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
               <div class="card-actions justify-end py-8">
-                <button class="btn btn-primary bg-green-500 border-none">Buy Tickets</button>
+                <button onclick="moveToSection()" class=" bg-green-500 border-none rounded-md py-3 px-3">Buy Tickets</button>
               </div>
             </div>
           </div>
     </header>
 <section class="container mx-auto my-24">
-<h1>
+<h1 class="text-center font-bold text-3xl">
     Best Offers For You
 </h1>
-<div class="flex flex-col lg:flex-row gap-6 mx-auto py-9">
+<div class="flex flex-col lg:flex-row gap-6 mx-auto py-9 justify-center">
   <div class="lg:w-[570px] flex bg-[#FFBF0F] rounded-3xl">
     <div class="px-3 lg:px-12 py-12">
-<h1>
+<h1 class="font-bold text-3xl">
   15% OFF
 </h1>
 <p>
@@ -73,13 +69,13 @@
     </div>
     <div class="h-auto lg:pl-8"> <img src="images/cupon-devider.png" alt=""></div>
     <div class="px-3 lg:px-12 py-12">
-      <h1>NEW15</h1>
+      <h1 class="font-bold text-2xl">NEW15</h1>
       <P>coupon code</P>
     </div>
   </div>
   <div class="lg:w-[570px] flex bg-[#F78C9C] rounded-3xl">
     <div class="px-3 lg:px-12 py-12">
-      <h1>
+      <h1 class="font-bold text-3xl">
         20% OFF
       </h1>
       <p>
@@ -89,35 +85,38 @@
           </div>
           <div class="h-auto lg:pl-8"> <img src="images/cupon-devider.png" alt=""></div>
           <div class="px-3 lg:px-12 py-12">
-            <h1>Couple 20</h1>
+            <h1 class="font-bold text-2xl">Couple 20</h1>
             <P>coupon code</P>
           </div>
   </div>
 </div>
+<div class="mx-auto py-6 items-center justify-center text-center"><button class="bg-green-200 text-green-500 rounded-md px-3 py-3">See All Offers</button></div>
 </section>
-<section class="container mx-auto my-24">
-<h1>Pepe Travels</h1>
-<div class="flex flex-col lg:flex-row py-24">
-  <div>
+<section class="container mx-auto my-24 bg-[#f7f8f8] rounded-2xl">
+<div class="items-center justify-center text-center pt-6"><h1 class="font-bold text-3xl">Pepe Travels</h1>
+<p class="pt-3">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
+</div>
+<div class="flex flex-col lg:flex-row py-24 justify-center">
+  <div class="bg-white px-6 py-6 rounded-l-2xl">
 <div class="flex justify-between">
-<div class="flex">
+<div class="flex gap-3">
 <div>
   <img src="images/bus-logo.png" alt="">
 </div>
 <div>
-  <p>Pepe Travels<br> Coach-009-WEB</p>
+  <p class="font-bold">Pepe Travels<br> Coach-009-WEB | Economy</p>
 </div>
 </div>
 <div class="flex">
 <div> <img src="images/seat-green.png" alt=""></div>
 <div>
   <P>
-    <span id="seats" class="text-green-500"> 0</span> seats left
+    <span id="seats" class="text-green-500 font-bold"> 40</span> seats left
   </P>
 </div>
 </div>
 </div>
-<div class="bg-[#f7f8f8]">
+<div class="bg-[#f7f8f8] my-6 py-6 px-6 rounded-2xl">
   <div class="flex justify-between">
 <div><p>Route</p></div>
 <div><P>Dhaka-Sylhet</P></div>
@@ -129,68 +128,169 @@
   </div>
   <div><hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></div>
   <div class="flex flex-col lg:flex-row lg:gap-6">
-<div><p>Boarding Point - Laxmipur</p></div>
-<div><P>Dropping Point - Bogura</P></div>
-<div><P>Est. Time - 11 Hour</P></div>
+<div><p class="font-bold">Boarding Point - Laxmipur</p></div>
+<div><P class="font-bold">Dropping Point - Bogura</P></div>
+<div><P class="font-bold">Est. Time - 11 Hour</P></div>
   </div>
 
 </div>
 </div>
-<div class="hidden lg:block">
+<div class="hidden lg:block bg-white">
 <img src="images/info-devider.png" alt="">
 </div>
-<div>
+<div class="bg-white px-16 rounded-r-2xl lg:py-32">
 <img src="images/fare.png" alt="">
 550 Taka <br>
 Per Seat
 </div>
 </div>
 </section>
-<section class="container mx-auto py-24">
-<div class="flex flex-col lg:flex-row gap-12">
+<section id="section" class="container mx-auto py-24">
+<div class="flex flex-col lg:flex-row gap-12 justify-center">
  <div>
-  <div class="grid grid-cols-5 items-center gap-6">
+  <div><P>Select Your Seat</P></div>
+  <div><hr></div>
+  <div class="flex justify-between py-3">
+    <div class="flex py-3"><div><img src="images/seat-gray.png" alt=""></div><div><p>Available</p></div></div>
+    <div class="flex py-3"><div><img src="images/seat-green-filled.png" alt=""></div><div><p>Selected</p></div></div>
+  </div>
+  <div><hr></div>
+  <div class="flex justify-end pr-10 py-3"><img class="w-[70px]" src="images/roup56.png" alt=""></div>
+  <div class="grid grid-cols-5 items-center gap-3">
 <div><p>A</p></div>
 <div><button class="btn">A1</button></div>
 <div><button class="btn">A2</button></div>
-<div><button class="btn">A3</button></div>
+<div class="px-6"><button class="btn">A3</button></div>
 <div><button class="btn">A4</button></div>
   </div>
-  <div class="grid grid-cols-5 items-center gap-6 py-6">
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
     <div><p>B</p></div>
 <div><button class="btn">B1</button></div>
 <div><button class="btn">B2</button></div>
-<div><button class="btn">B3</button></div>
+<div class="px-6"><button class="btn">B3</button></div>
 <div><button class="btn">B4</button></div>
   </div>
- </div> 
- <div class="bg-[#f7f8f8] py-6">
-  <div class="flex justify-between">
-    <div><p>Seat<span id="counter" class="text-green-500"> 0</span></p></div>
-    <div><p>Price</p></div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>C</p></div>
+<div><button class="btn">C1</button></div>
+<div><button class="btn">C2</button></div>
+<div class="px-6"><button class="btn">C3</button></div>
+<div><button class="btn">C4</button></div>
   </div>
-  <div id="clickedList">
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>D</p></div>
+<div><button class="btn">D1</button></div>
+<div><button class="btn">D2</button></div>
+<div class="px-6"><button class="btn">D3</button></div>
+<div><button class="btn">D4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>E</p></div>
+<div><button class="btn">E1</button></div>
+<div><button class="btn">E2</button></div>
+<div class="px-6"><button class="btn">E3</button></div>
+<div><button class="btn">E4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>F</p></div>
+<div><button class="btn">F1</button></div>
+<div><button class="btn">F2</button></div>
+<div class="px-6"><button class="btn">F3</button></div>
+<div><button class="btn">F4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>G</p></div>
+<div><button class="btn">G1</button></div>
+<div><button class="btn">G2</button></div>
+<div class="px-6"><button class="btn">G3</button></div>
+<div><button class="btn">G4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>H</p></div>
+<div><button class="btn">H1</button></div>
+<div><button class="btn">H2</button></div>
+<div class="px-6"><button class="btn">H3</button></div>
+<div><button class="btn">H4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>I</p></div>
+<div><button class="btn">I1</button></div>
+<div><button class="btn">I2</button></div>
+<div class="px-6"><button class="btn">I3</button></div>
+<div><button class="btn">I4</button></div>
+  </div>
+  <div class="grid grid-cols-5 items-center gap-3 py-6">
+    <div><p>J</p></div>
+<div><button class="btn">J1</button></div>
+<div><button class="btn">J2</button></div>
+<div class="px-6"><button class="btn">J3</button></div>
+<div><button class="btn">J4</button></div>
+  </div>
+ </div> 
+ <div>
+  <div class="bg-[#f7f8f8] py-6 rounded-2xl">
+  <div class="items-center justify-center text-center">
+    <div><p class="font-bold">Seat<span id="counter" class="text-green-500"> 0</span>& Price</p></div>
+    
+  </div>
+  <div class="py-3"><hr></div>
+  <div id="clickedList" class="text-center">
 
   </div>
 
 <div class="py-6"><hr></div>
-<div class="flex justify-between">
-  <div><p>Total Price</p></div>
-  <div><p>BDT<span id="totalPrice">0</span></p></div>
+<div class="flex justify-between px-3">
+  <div><p class="font-bold">Total Price</p></div>
+  <div><p>BDT<span id="totalPrice"> 0</span></p></div>
 </div>
-<div class="py-6">
+<div class="py-6 px-3 text-center">
 <input type="text" id="couponCode" placeholder="Enter coupon code">
-<button id="applyButton" onclick="applyCoupon()">Apply</button>
+<button id="applyButton" class="bg-green-500 rounded-md px-3 text-white" onclick="applyCoupon()">Apply</button>
 </div>
-<div class="flex justify-between py-6">
-  <div><p>Grand Total</p></div>
+<div class="flex justify-between pt-3 px-3">
+  <div><p class="font-bold">Grand Total</p></div>
   <div><p id="grandTotal"></p></div>
 </div>
  </div>
-
+<div class="py-3">
+  <label class="input input-bordered flex items-center gap-2 my-6">
+    Name
+    <input type="text" class="grow" placeholder="Enter Your Name" />
+  </label>
+  <label class="input input-bordered flex items-center gap-2 my-6">
+    Email
+    <input type="text" class="grow" placeholder="Enter your Email" />
+  </label>
+  <label class="input input-bordered flex items-center gap-2 my-6">
+    Phone Number
+    <input id="numberInput" type="text" class="grow" maxlength="11" placeholder="Enter 11-Digit number" />
+  </label>
+  <button id="continueButton" class="bg-green-500 rounded-md text-white px-6 py-3 w-full" disabled>Next</button>
+</div>
+<div class="flex justify-between">
+  <div><p>Terms & conditions</p><hr></div>
+  <div><p>Cancellation Policy</p><hr></div>
+</div>
+</div>
   </div>
 
 </section>
+
+
+  <div id="modalContainer" class="modal-container flex justify-center text-center px-6 py-6 h-auto">
+    <div class="modal-text">
+      <img class="px-48 py-6" src="images/success.png" alt="">
+<h1 class="font-bold text-2xl py-3">Success</h1>
+<p class="font-bold">Thank you for Booking Our Bus Seats.</p>
+<P class="font-bold">We are working hard to find the best service and deals for you.</P>
+<p>Shortly you will find a confirmation in your email.</p>
+<button id="close" class="bg-green-500 rounded-md my-6 py-3 px-3">Continue</button>
+    </div>
+  </div>
+
+
+
 <script src="./app.js"></script>
 </body>
 </html>
+
